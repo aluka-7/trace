@@ -11,7 +11,7 @@ import (
 	"github.com/golang/protobuf/ptypes/duration"
 	"github.com/golang/protobuf/ptypes/timestamp"
 
-	protogen "github.cn/aluka-7/trace/proto"
+	protogen "github.com/aluka-7/trace/proto"
 )
 
 const protoVersion1 int32 = 1

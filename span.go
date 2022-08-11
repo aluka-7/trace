@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	protoGen "github.cn/aluka-7/trace/proto"
+	protoGen "github.com/aluka-7/trace/proto"
 )
 
 const (
