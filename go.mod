@@ -1,4 +1,4 @@
-module github.cn/aluka-7/trace
+module github.com/aluka-7/trace
 
 go 1.18
 
