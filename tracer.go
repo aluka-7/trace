@@ -107,14 +107,14 @@ type Tracer interface {
 
 // Init init trace report.
 func Init(serviceName string, tags []Tag, cfg *Config) {
-	fmt.Println("Loading FoChange Trace Engine ver:0.9.9")
+	fmt.Println("Loading Trace Engine")
 	report := newReport(cfg.Network, cfg.Addr, time.Duration(cfg.Timeout), cfg.ProtocolVersion)
 	SetGlobalTracer(NewTracer(serviceName, tags, report, cfg.DisableSample))
 }
 
 // SetGlobalTracer SetGlobalTracer
 func SetGlobalTracer(tracer Tracer) {
-	fmt.Println("Loading FoChange Set Global Tracer")
+	fmt.Println("Loading Set Global Tracer")
 	_tracer = tracer
 }
 
