@@ -19,11 +19,11 @@ var _tracer Tracer = noopTracer{}
 type BuiltinFormat byte
 
 const (
-	// FosTraceID 跟踪键
-	FosTraceID    = "fos-trace-id"
-	FosTraceDebug = "fos-trace-debug"
-	flagSampled   = 0x01
-	flagDebug     = 0x02
+	// SystemTraceID 跟踪键
+	SystemTraceID    = "trace-id"
+	SystemTraceDebug = "trace-debug"
+	flagSampled      = 0x01
+	flagDebug        = 0x02
 
 	maxLevel = 64
 	// 硬码重置概率为0.00025, 1/4000

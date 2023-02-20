@@ -201,7 +201,7 @@ func (d *dapper) extract(format interface{}, carrier interface{}) (Trace, error)
 			return nil, err
 		}
 	}
-	ctx, err := contextFromString(carr.Get(FosTraceID))
+	ctx, err := contextFromString(carr.Get(SystemTraceID))
 	if err != nil {
 		return nil, err
 	}

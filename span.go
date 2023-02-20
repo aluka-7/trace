@@ -128,7 +128,7 @@ func (s *Span) setLog(logs ...LogField) Trace {
 
 // Visit visits the k-v pair in trace, calling fn for each.
 func (s *Span) Visit(fn func(k, v string)) {
-	fn(FosTraceID, s.context.String())
+	fn(SystemTraceID, s.context.String())
 }
 
 // SetTitle reset trace title
